@@ -1,0 +1,162 @@
+.App {
+  max-width: 100rem;
+  box-shadow: 0 6rem 12rem rgba(0, 0, 0, 0.9);
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+
+  &_h1 {
+    text-align: center;
+  }
+}
+
+.navbar {
+  display: flex;
+  background-color: black;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+
+  height: 6rem;
+  &_h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1098ad;
+  }
+}
+
+.SignIN {
+  margin-right: 2rem;
+}
+
+.logout {
+  &,
+  &:link,
+  &:visited {
+    color: #fff;
+    background-color: #1098ad;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 1.1rem;
+    transition: all 1s;
+  }
+  &:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.messageright {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  gap: 3rem;
+
+  margin-bottom: 1rem;
+
+  &_box {
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    &_p {
+      color: black;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+    &_smallp {
+      font-size: 2rem;
+      color: #1098ad;
+    }
+  }
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+
+  gap: 3rem;
+
+  margin-bottom: 1rem;
+
+  &_box {
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+
+    &_p {
+      color: black;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      text-rendering: optimizeLegibility;
+    }
+    &_smallp {
+      font-size: 2rem;
+      color: #1098ad;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 100%;
+
+  &_input {
+    width: 100%;
+    padding: 2rem;
+    height: 5rem;
+    background-color: #1098ad;
+
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: inline-block;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  &_btn {
+    &,
+    &:link,
+    &:visited {
+      color: #fff;
+      background-color: #1098ad;
+      width: 10rem;
+      height: 5rem;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 1.1rem;
+      transition: all 1s;
+      border: none;
+      display: inline-block;
+    }
+    &:hover {
+      background-color: black;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
